@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Page</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+  
+  
+</head>
+<body>
+  <h1 id="S01">Tajmim Hossain Purnata</h1>
+<hr>
+  <h2>About</h2>
+  
+   <p>Hello! Welcome to my blog. My name is Tajmim Hossain Purnata. I live in Dhaka, Bangladesh. I am currently a student at <strong>BRAC</strong> University. I am enrolled in the <b>CSE</b> Department and this is my 12<sup>th</sup> semester.</p>
+   <p>Here you can see some of the most basic informations about me. Thank you for visiting.</p>
+   
+  <h2>Educational Background</h2>
+  <!-- table banabo (DONE)-->
+  <table  class="center">
+   <tr>
+    <th> Institution</th>
+    <th> Degree</th>
+    <th>Year</th>
+   </tr>
+   
+   <tr>
+    <td rowspan="2">Mastermind</td>
+     <td> A'levels</td>
+     <td> 2016</td>
+   </tr>
+   
+    <tr>
+     <td>O'levels</td>
+     <td>2014</td>
+    </tr>
+    
+    <tr>
+     <td><a href="https://www.bracu.ac.bd/" title="Click to visit Bracu" target="_blank" style="text-decoration:none;">BRACU</a></td>
+     <td>Undergraduation</td>
+     <td>2017-present</td>
+    </tr>
+  </table>
+  
+  <h2>Hobbies</h2>
+  <!-- list banabo (DONE)-->
+  <p>Few of my hobbies include:</p>
+
+  
+  <ol >
+    <li>Listening to Music</li>
+    <li>Photography</li>
+    <li>Sketching</li>
+    <li>Travelling</li>
+    <li>Watching Movies</li>
+  </ol> 
+  
+ 
+ 
+<img src="sketch.jpg" alt="My Sketch-PAN." width="600" height="650">
+<img src="flower.jpg" alt="Photo taken by me-SUNRISE." width="600" height="650">
+
+<p><i>Sample of my sketch and photography.</i></p>
+  
+<hr>
+  <h3>Favourite Quote:</h3>
+ <p><cite><q>If you want to love others, you should love yourself first!</q></cite> -By Kim Namjoon from <a href="https://ibighit.com/bts/eng/" target="_blank">BTS</a></p>
+
+<!--List banabo-(DONE)-->
+
+<ul id="l02">
+  <li><a href="#S01">About</a></li>
+  <li><a href="mailto:tajmimpurnata@gmail.com">Contact</a></li>
+  <li><a href="https://piazza.com/class/kg4k981ic375wl" target="_blank">Piazza</a></li>
+  <li><a href="https://www.facebook.com/tajmimhossain.purnata" target="_blank">Facebook</a></li>
+</ul>
+
+<!-- <p><b>Last modified date:
+<script type="text/javascript">
+ function lastModified () {
+ document.write(document.lastModified); }
+  lastModified();
+</script></b>
+</p>-->
+
+<p id="dem"></p>
+
+<script>
+  document.getElementById("dem").innerHTML =
+   "Last modified: " +document.lastModified;
+
+</script>
+
+ <p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Location: " + window.location.pathname;
+</script>
+
+</body>
+</html>
