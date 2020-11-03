@@ -22,7 +22,7 @@ h1 { color: rgb(60, 60, 60);
 	text-align: center;
 	float:right;
 	padding-right: 15px;
-	padding-left: 15px;
+	margin-left: 5px;
 }
 h3 {
 	font-family: Sans-serif;
