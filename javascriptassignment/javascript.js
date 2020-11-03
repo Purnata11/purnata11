@@ -80,7 +80,11 @@ function clearit() {
 }
 
 function caps() {
-	text.value= text.value.toUpperCase();
+	if( text.value == text.value.toUpperCase()) {
+	text.value= text.value.toLowerCase(); }
+	else {
+		text.value= text.value.toUpperCase();
+	}
 }
 
 function sort() {
