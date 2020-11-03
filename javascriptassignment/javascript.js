@@ -113,7 +113,7 @@ function strip() {
     	y[i] = y[i].trim();
     }
     text.value=y.join('\n');
-    text.value= text.value.replace( /[\r\n]+/gm, '\n');
+    text.value= text.value.replace(/^\s*\n/gm, "");
 }
 
 function addnum() {
