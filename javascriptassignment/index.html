@@ -47,8 +47,7 @@
          	<fieldset>
          	<label>Input series number: </label>
 
-         	<input type="text" placeholder="Enter series" name="num">
-         	<button id="cal" type="button" onclick="calc(num.value)">Calculate</button>
+         	<input type="text" placeholder="Enter series" name="num" oninput="calc(num.value)" onchange="calc(num.value)">
              <br><br>
          	<label>Max: </label>
          	
