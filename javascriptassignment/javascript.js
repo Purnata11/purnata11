@@ -95,7 +95,14 @@ function sort() {
 
 function reverse() {
 	var x = text.value.split('\n');
-	x.reverse();
+	 
+	for (var i = 0; i < x.length; i++) {
+		var p= x[i].split(' ');
+		for (var j = 0; j < p.length; j++) {
+			p=p.reverse();
+		}
+		 x[i] =p.join(' ');
+	}
 	text.value= x.join('\n');
 }
 
