@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment2</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quote Genarator</h1>
+<!--quote box-->
+<div id="btn">
+       <h3>Choose color!</h3>
+     	<button id="pink" type="button" onclick="pink()"></button>
+     	<button id="blue" type="button" onclick="blue()"></button>
+     	<br>
+     	<button id="green" type="button" onclick="green()"></button>
+     	<button id="purple" type="button" onclick="purple()"></button>
+     </div>
+
+    <div id="quoteDisplay" >
+    	<p id="quotee"></p>
+    </div>
+
+     <br>
+     <br>
+    
+<hr>
+   <h1>Weight Converter</h1> 
+     <div id="converter">
+     	<input type="number" placeholder="Input" name="input" oninput="converter(this.value)" onchange="converter(this.value)">
+
+     	<select id="inputType">
+     		<option value="kilogram">Kilograms</option>
+     		<option value="pound">Pounds</option>
+     	</select>
+         
+         <!--<button type="button" onclick="converter(input.value)">Go</button>
+       <input type="button"  onclick="converter(input.value)">-->
+
+     	<span>=</span><span id="output"></span>
+        </div>
+        <br>
+        <br>
+        <hr> 
+    <h1>The Max, Min, Sum, Average and reverse order of a series of number</h1>
+         <form name="mm">
+         	<fieldset>
+         	<label>Input series number: </label>
+
+         	<input type="text" placeholder="Enter series" name="num">
+         	<button id="cal" type="button" onclick="calc(num.value)">Calculate</button>
+             <br><br>
+         	<label>Max: </label>
+         	
+         	<span id="max"></span>
+         	<br><br>
+         	<label>Min: </label>
+             
+         	<span id="min"></span>
+         	<br><br>
+         	<label>Sum: </label>
+             
+            <span id="sum"></span>
+         	<br><br>
+         	<label>Average: </label>
+            
+         	<span id="avg"></span>
+         	<br><br>
+         	<label>Reverse order: </label>
+             
+         	<span id="rev"></span>
+         	</fieldset>
+         </form>
+         <br>
+         <br>
+         <hr>
+         <h1>Magic Box!</h1>
+         <div id="magic">
+         	<textarea id="text" cols="20" rows="20">Hello! Wanna see some tricks?</textarea>
+         	<br>
+         <div id="mbbtn">
+         	<button id="clear">Clear It</button>
+         	<button id="caps">Capitalize</button>
+         	<button id="sort">Sort</button>
+         	<button id="reverse">Reverse</button>
+            <button id="strip">Strip Blank</button>
+         	<button id="addnum">Add Numbers</button>
+         	<button id="shuffle">Shuffle</button>
+         </div>
+
+
+         </div>
+    <script src="javascript.js">
+    </script>
+</body>
+</html>
