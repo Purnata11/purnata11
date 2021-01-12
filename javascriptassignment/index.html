@@ -6,10 +6,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Quote Genarator</h1>
+  <h1>Quote Generator</h1>
 <!--quote box-->
 <div id="btn">
-       <h3>Choose color!</h3>
+       <h3>Choose color</h3>
      	<button id="pink" type="button" onclick="pink()"></button>
      	<button id="blue" type="button" onclick="blue()"></button>
      	<br>
@@ -42,13 +42,12 @@
         <br>
         <br>
         <hr> 
-    <h1>The Max, Min, Sum, Average and reverse order of a series of number</h1>
+    <h1>Calculations</h1>
          <form name="mm">
          	<fieldset>
          	<label>Input series number: </label>
 
-         	<input type="text" placeholder="Enter series" name="num">
-         	<button id="cal" type="button" onclick="calc(num.value)">Calculate</button>
+         	<input type="text" placeholder="Enter series" name="num" oninput="calc(num.value)" onchange="calc(num.value)">
              <br><br>
          	<label>Max: </label>
          	
@@ -76,7 +75,7 @@
          <hr>
          <h1>Magic Box!</h1>
          <div id="magic">
-         	<textarea id="text" cols="20" rows="20">Hello! Wanna see some tricks?</textarea>
+         	<textarea id="text" cols="20" rows="20">Hello! Wanna see some tricks? Enter text below.</textarea>
          	<br>
          <div id="mbbtn">
          	<button id="clear">Clear It</button>

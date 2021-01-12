@@ -80,7 +80,11 @@ function clearit() {
 }
 
 function caps() {
-	text.value= text.value.toUpperCase();
+	if( text.value == text.value.toUpperCase()) {
+	text.value= text.value.toLowerCase(); }
+	else {
+		text.value= text.value.toUpperCase();
+	}
 }
 
 function sort() {
@@ -91,7 +95,12 @@ function sort() {
 
 function reverse() {
 	var x = text.value.split('\n');
-	x.reverse();
+	 
+	for (var i = 0; i < x.length; i++) {
+		var p= x[i].split(' ');
+			p=p.reverse();
+		 x[i] =p.join(' ');
+	}
 	text.value= x.join('\n');
 }
 
@@ -102,7 +111,7 @@ function strip() {
     	y[i] = y[i].trim();
     }
     text.value=y.join('\n');
-    text.value= text.value.replace( /[\r\n]+/gm, '\n');
+    text.value= text.value.replace(/^\s*\n/gm, "");
 }
 
 function addnum() {
